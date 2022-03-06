@@ -1,0 +1,23 @@
+package com.company;
+
+import java.beans.beancontext.BeanContextChild;
+
+public class Main {
+
+    public static void main (String[] args){
+        double[] numbers = {6.2, -8.8, 2.0, 1.2, -1.6, 8.4, -9.8, 1.2, -4.4, -3.5, 2.8, -8.8, 6.4, 5.8,-7.2};
+        double NUM=0;
+        int NUM1 =0;
+        boolean hook=false;
+        for (double nabers:numbers){
+            if (nabers<0){
+                hook = true;
+            }else if (hook){
+                NUM1++;
+                NUM +=nabers;
+            }
+        }
+        System.out.println(NUM / NUM1);
+
+    }
+}
